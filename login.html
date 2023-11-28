@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="proyectofinal.jpg" type="image/jpg">
+</head>
+<body>
+    <div>
+        <p>Usuario</p>
+        <p>progra2</p>
+        <p>Contraseña</p>
+        <p>progra22023</p>
+    </div>
+
+    <section>
+        <form id="loginForm">
+            <h1>Inicio de Sesión</h1>
+            <div class="inputbox">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <input type="text" required id="username" placeholder="Usuario">
+            </div>
+            <div class="inputbox">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" required id="password" placeholder="Contraseña">
+            </div>
+            <button type="submit">Ingresar</button>
+            <div class="message" id="message"></div>
+        </form>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>
+

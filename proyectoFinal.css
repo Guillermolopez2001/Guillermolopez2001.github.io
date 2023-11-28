@@ -1,0 +1,100 @@
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif !important;
+}
+.boton {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Estilos para el botón */
+.boton button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #f39c12; /* Color de fondo del botón */
+}
+
+/* Estilos para el botón al pasar el cursor */
+.boton button:hover {
+  background-color: #2980b9; /* Cambio de color al pasar el cursor */
+}
+
+/* Estilos para el botón */
+.dropbtn {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Colores de fondo para cada botón */
+.dropdown:nth-of-type(1) .dropbtn {
+  background-color: #3498db; /* Azul */
+}
+
+.dropdown:nth-of-type(2) .dropbtn {
+  background-color: #2ecc71; /* Verde */
+}
+
+.dropdown:nth-of-type(3) .dropbtn {
+  background-color: #e74c3c; /* Rojo */
+}
+
+/* Agrega estilo para el botón Recursos Gratis */
+#dropdown3 .dropbtn {
+  background-color: #f39c12; /* Naranja */
+}
+
+/* Estilos para el contenido del dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Estilos para los enlaces del dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Estilos para los enlaces al pasar el cursor */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Mostrar el dropdown al hacer click */
+.show {
+  display: block;
+}
+
+/* Estilos para la imagen del logo */
+.logo img {
+  width: 80px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Estilos para el contenedor */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #9716d7;
+  padding: 15px 20px;
+  font-size: 16px;
+}
