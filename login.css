@@ -1,0 +1,94 @@
+body {
+    background-image: url('proyectofinal.jpg');
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    background-size: cover;
+}
+
+section {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo transparente */
+    padding: 20px; /* Añade espacio alrededor del formulario */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.inputbox {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px; 
+}
+
+.inputbox ion-icon {
+    margin-right: 15px; 
+    font-size: 20px;
+    color: #555; 
+}
+
+.inputbox input {
+    flex: 1; 
+    border: none;
+    outline: none; 
+    font-size: 16px;
+}
+
+.inputbox input::placeholder {
+    color: #999; 
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #008aca;
+    color: #9a8989;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #d0b3b3;
+    border: 1px solid #d0b3b3;
+}
+
+.message {
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.success {
+    background-color: #8BC34A;
+    color: #fff;
+}
+
+.error {
+    background-color: #1ea2bc;
+    color: #fff;
+}
+
+div {
+    margin-bottom: 20px; 
+}
+
+div p {
+    margin-bottom: 10px; 
+}

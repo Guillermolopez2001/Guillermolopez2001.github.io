@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevSkill Academy</title>
+  <link rel="icon" href="proyectofinal.jpg" type="image/jpg">
+  <link rel="stylesheet" href="java.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="proyectofinal.jpg" alt="Logo de DevSkill Academy">
+    </div>
+    <h1>Curso Básico de Java</h1>
+  </div>
+
+  <section>
+    <h2>¿Qué es Java?</h2>
+    <p>Java es un lenguaje de programación de alto nivel que se caracteriza por ser versátil, portable y orientado a objetos. Fue desarrollado por Sun Microsystems a principios de la década de 1990 y desde entonces ha ganado popularidad debido a su capacidad para funcionar en diferentes plataformas y su amplio uso en el desarrollo de aplicaciones.</p>
+    <h3>Selecciona la Respuesta Correcta</h3>
+    <b><h4>¿Cuáles son algunas características clave de Java?</h4></b>
+    <select name="#" id="opciones">
+        <option value="opcion1">Compilación a código máquina y orientación a procedimientos</option>
+        <option value="opcion2">Versatilidad, portabilidad y orientación a objetos</option>
+        <option value="opcion3">Diseño exclusivo para sistemas Windows</option>
+    </select>
+    <button onclick="evaluaRespuesta()">Evaluar</button>
+    <p id="resultado"></p> 
+</section>
+
+
+<section>
+  <h2>Características básicas de Java</h2>
+  <ol>
+      <li>
+          <h3>Portabilidad</h3>
+          <p>El código escrito en Java puede ejecutarse en diferentes sistemas operativos sin necesidad de reescribirlo, gracias a la máquina virtual de Java (JVM).</p>
+      </li>
+      <li>
+          <h3>Orientado a objetos</h3>
+          <p>Java está diseñado principalmente como un lenguaje de programación orientado a objetos, lo que significa que se enfoca en el uso de objetos y clases para organizar y estructurar el código.</p>
+      </li>
+      <li>
+          <h3>Seguridad</h3>
+          <p>Java incorpora diversas características de seguridad para prevenir amenazas como virus y malware. La ejecución de código no confiable se controla mediante un modelo de seguridad robusto.</p>
+      </li>
+      <li>
+          <h3>Multiplataforma</h3>
+          <p>La portabilidad de Java se debe en gran medida a su capacidad para ejecutarse en múltiples dispositivos y sistemas, como computadoras, dispositivos móviles, servidores, entre otros.</p>
+      </li>
+      <li>
+          <h3>Amplia biblioteca estándar</h3>
+          <p>Java tiene una amplia gama de bibliotecas estándar que proporcionan funcionalidades listas para usar para diversas tareas, lo que facilita el desarrollo de aplicaciones.</p>
+      </li>
+  </ol>
+      <h3>Selecciona la Respuesta Correcta</h3>
+      <b>
+          <h4>¿Cuál es una de las características clave de Java que permite que el código escrito en este lenguaje se ejecute en múltiples sistemas operativos sin necesidad de modificaciones?</h4>
+      </b>
+      <select name="#" id="opcion">
+          <option value="opcion1">Su dependencia de bibliotecas específicas de cada sistema operativo</option>
+          <option value="opcion2">La compilación directa a código máquina para cada plataforma</option>
+          <option value="opcion3">La utilización de la Máquina Virtual de Java (JVM).</option>
+      </select>
+      <button onclick="verificarRespuesta()">Evaluar</button>
+      <p id="Respuesta"></p>
+</section>
+
+
+  <section>
+    <h2>Videos sobre Java</h2>
+    <iframe width="460" height="240" src="https://www.youtube.com/embed/crBLydQRUsk?si=dBjqwpBEdMRQ8Lgv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="460" height="240" src="https://www.youtube.com/embed/hPbvq7oe7dI?si=nmw01U3XakMw67IO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <h2> Clases en Java</h2>
+    <h3>¿Qué es una clase en Java?</h3>
+    <p>Una clase en Java es como un plano o un molde que define cómo se crea un objeto. Piensa en una clase como un conjunto de instrucciones que dice cómo deben ser los objetos.
+      Ejemplo sencillo:
+      Si piensas en un objeto "Auto", la clase Auto definiría qué características tiene ese auto (como color, marca, modelo) y qué puede hacer (como arrancar, detenerse).</p>
+     <img src="data:image/png;base64,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" alt="">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzYZNd0ViacvSsuqigy-nbtC74YVcJ-wloA&usqp=CAU" alt="">
+     <iframe width="320" height="200" src="https://www.youtube.com/embed/q9gZ9fjKIC0?si=RnW38e7IzDUR3E9v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <br>
+     <h3>Selecciona la Respuesta Correcta</h3>
+     <b>
+       <h4>¿Qué representa una clase en Java en relación con los objetos?</h4>
+    </b>
+     <select name="evaluar" id="evaluar">
+      <option value="opcion1">Una clase es un objeto en sí mismo</option>
+      <option value="opcion2">Una clase define las características y comportamientos que tendrán los objetos que se creen a partir de ella</option>
+      <option value="opcion3">Una clase es un contenedor de variables globales para los objetos</option>
+    </select>
+    <button onclick="Respuestas()">Evaluar</button>
+    <p id="answer"></p>
+     <h2> Atributos en Java </h2>
+    <h3>¿Qué son los atributos en Java?</h3>
+    <p>Los atributos en Java son como las características o propiedades de un objeto. Son variables que representan el estado de un objeto y almacenan datos específicos sobre ese objeto.
+      Ejemplo sencillo:
+      En la clase Auto, los atributos podrían ser color, marca, modelo, que almacenan información como "rojo", "Toyota", "Corolla".</p>
+       <img src="https://portalacademico.cch.unam.mx/sites/default/files/cyc1u3oa3-p03-01.jpg" alt="">
+      <img src="https://programacion.top/wp-content/uploads/2020/07/Estructura-de-una-clase-en-java.jpg" alt="">
+      <iframe width="320" height="200" src="https://www.youtube.com/embed/h46nlOF1IEk?si=LRNBodovLgpde7SM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      
+      <h3>Selecciona la Respuesta Correcta</h3>
+     <b>
+     <h4> ¿Por qué son importantes los atributos en la programación orientada a objetos?</h4>
+     </b>
+     <select name="#" id="Answer">
+      <option value="opcion1"> No son relevantes, ya que solo los métodos definen el comportamiento de un objeto </option>
+      <option value="opcion2">  Permiten representar las características de un objeto y mantener su estado durante su ciclo de vida </option>
+      <option value="opcion3">  Los atributos no tienen importancia, ya que solo se utilizan en clases avanzadas de programación. </option>
+      </select>
+      <button onclick="comprovar()">Evaluar</button>
+      <p id="select"></p>
+
+      <h2>Métodos en Java</h2>
+      <h3>¿Qué son los métodos en Java?</h3>
+      <p>Los métodos en Java son como las acciones que puede realizar un objeto. Son funciones definidas dentro de una clase que representan el comportamiento de los objetos.
+        Ejemplo sencillo:
+        En la clase Auto, los métodos podrían ser arrancar(), detenerse(), que representan acciones como "iniciar el motor" o "detenerse"</p>
+        <img src="https://portalacademico.cch.unam.mx/sites/default/files/cyc1u3oa3-p03-01.jpg" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY28N-Rh2xRZXdhS2xIHad8SZU7EjwMldg3w&usqp=CAU" alt="">
+      <iframe width="320" height="200" src="https://www.youtube.com/embed/duZToqP-NdA?si=h6LGOsBx2eCdCVFO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+      <h3>Selecciona la Respuesta Correcta</h3>
+      <b>
+      <h4> ¿Por qué son importantes los atributos en la programación orientada a objetos?</h4>
+      </b>
+      <select name="#" id="final">
+        <option value="opcion1"> No son relevantes, ya que solo los métodos definen el comportamiento de un objeto </option>
+        <option value="opcion2">  Permiten representar las características de un objeto y mantener su estado durante su ciclo de vida </option>
+        <option value="opcion3">  Los atributos no tienen importancia, ya que solo se utilizan en clases avanzadas de programación. </option>
+        </select>
+        <button onclick="finish()">Evaluar</button>
+        <p id="options"></p>
+    </section>
+
+
+    <section>
+      <div class="condicional">
+      <h2>Estructuras de control Condicional</h2>
+      <h3><li>if</li></h3>
+      <p>Es una estructura de control condicional que ejecuta un bloque de código si se cumple una condición especificada. También puede tener una cláusula else que se ejecuta cuando la condición no se cumple</p>
+     <h3> Ejemplo</h3>
+     <img src="WhatsApp Image 2023-11-27 at 1.26.23 PM.jpeg" alt="">
+     <iframe width="400" height="200" src="https://www.youtube.com/embed/tE-a1tH-Iq4?si=BN1p6CeTo-EOKnhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     <h3>¿Cuál es el propósito principal de utilizar la estructura de control condicional If-Else en programación?</h3>
+      <b>
+      <select name="estructura" id="estructura">
+        <option value="opcion1">Evaluar una condición y ejecutar un bloque de código si se cumple, de lo contrario, ejecutar otro bloque de código.</option>
+        <option value="opcion2">Cambiar el flujo de ejecución del programa de manera aleatoria</option>
+        <option value="opcion3">Ejecutar un bloque de código de manera repetitiva.</option>
+      </select>
+      <button onclick="evaluarEstructura()">Evaluar</button>
+      <p id="ESTRUCTURA"></p>
+     <h3><li>Switch</li></h3>
+     <p>Es otra estructura de control condicional que evalúa una expresión y realiza diferentes acciones basadas en el valor de esa expresión. Permite evaluar múltiples casos y ejecutar el bloque de código correspondiente al caso coincidente.</p>
+     <h3>Ejemplo</h3>
+     <img src="switch.jpeg" alt="">
+     <iframe width="400" height="200" src="https://www.youtube.com/embed/HEOdd2RnAko?si=BPjxleoGD-vPM9oA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+     <b><h3> ¿En qué circunstancia es más eficiente utilizar la estructura Switch-Case en lugar de múltiples bloques de If-Else anidados?</h3>
+    
+      <select name="estructuraswitch" id="estructuraswitch">
+      <option value="opcion1">En casos donde la lógica depende de una única condición.</option>
+      <option value="opcion2">   Cuando se requiere evaluar una sola condición. </option>
+      <option value="opcion3">Si hay múltiples condiciones independientes y bien definidas </option>
+    </select>
+    <button onclick="Estructuraswitch()">Evaluar</button>
+    <p id="switch"></p>
+    </section>
+
+
+
+  </div>
+    <section>
+      <div class="bucles">
+      <h2>BUCLES O CICLOS EN JAVA </h2>
+      <p>Los bucles son estructuras de control que permiten ejecutar un bloque de código repetidamente mientras se cumpla una condición específica. Los bucles son fundamentales para la programación y ayudan a automatizar tareas repetitivas. Hay tres tipos principales de bucles en Java: for, while, y do-while. Cada uno tiene sus propias características y se utiliza en situaciones particulares:</p>
+    <ol>
+      <h3><li> Bucle for</li></h3>
+      <p>El bucle for es útil cuando se conoce el número exacto de iteraciones que se deben realizar. Se compone de tres partes: <br>
+
+        Inicialización: Se establece el valor inicial del contador. <br>
+        Condición: Verifica si se cumple la condición para continuar el bucle.<br>
+        Iteración: Incrementa o modifica el contador en cada iteración.</p>
+    <h3>Ejemplo:</h3>
+    <img src="data:image/jpeg;base64,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" alt="">
+    <iframe width="400" height="200" src="https://www.youtube.com/embed/V7U96RG6MPE?si=EqlIIZAimV71ri2l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+     <b><h3> ¿Qué hace la parte de iteración en un bucle for?</h3>
+    
+      <select name="buclefor" id="buclefor">
+      <option value="opcion1">  Incrementa o modifica el contador en cada iteración.</option>
+      <option value="opcion2">Realiza la operación principal del bucle </option>
+      <option value="opcion3"> Incrementa o modifica el contador en cada iteración. </option>
+    </select>
+    <button onclick="BUcleFor()">Evaluar</button>
+    <p id="FOR"></p>
+    
+     <h3><li>Bucle while</li></h3>
+    <p>El bucle while se utiliza cuando se desconoce el número exacto de iteraciones, pero se conoce la condición de parada al principio del bucle. Se evalúa la condición antes de cada iteración.</p>
+      <h3>Ejemplo</h3>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQderG5XbSB9sxQ4V791EooXvoDMhXEn65fiQ&usqp=CAU" alt="">
+      <iframe width="400" height="200" src="https://www.youtube.com/embed/Vl9asbaZFZg?si=CRM3D94x0dt3AcTG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <b><h3>¿En qué circunstancias es útil utilizar un bucle while en Java?
+      </h3>
+        <select name="buclewhile" id="buclewhile">
+        <option value="opcion1"> Cuando se desconoce el número exacto de iteraciones pero se conoce la condición de parada. </option>
+        <option value="opcion2"> Exclusivamente para operaciones matemáticas complejas </option>
+        <option value="opcion3"> Cuando se conoce el número exacto de iteraciones. </option>
+      </select>
+      <button onclick="BUclewhile()">Evaluar</button>
+      <p id="while"></p> 
+      <h3><li>Bucle do-while</li></h3>
+      <p>El bucle do-while es similar al while, pero garantiza que el bloque de código se ejecutará al menos una vez antes de verificar la condición de salida.</p>
+      <h3>Ejemplo</h3>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARQAAAC2CAMAAAAvDYIaAAACqVBMVEX////6+vr///38//////v///b4//////n///Hz//////jl//++1PD3///+/v/r////+v///+Pv+f/o1LvO5/99mML/9//e8f///9jj///Ie3Ll8////9///+jt+v///euFob//6bv/7v/t9Pzy6+/08e67aG/c2tnh6vPu6/XK19nBwcGur6zF6f//8+qVlJDBxfqScMDZ3f6pmdnKx+S2xdvK0tu+4v+bfcfm7f/W9f/x07b+7t7o5d7G3uqwev+Fb3yGe//I7//s0P/35f/C2//KrP+Nif+Qov+Idv+ngv+oov/Xqf+JhoiSp73x6L2euf/WromHU6+NmKXIr4Kw3O3268zj1MiyrZ/FdGuScGCVbKGpVXDFxOz13NfLscCVR4K7pdqpRmLwv6a0WGuUiMHAeIBVY3mdiWmArdSVweVjcpVlnb3Pv5WvrYZlUEb2vIEASJbjpJd9AFKsrtqjgLe6j6Neb6dveoR1rce5hWunhHTUqnvpuKTho56ynb2bv8j606ghW5HZxM3MxqcvRICgfaayc4SxucXErqnmwbyhKnacXH+UWpNeW2GDe29MOjRVgbS1lIZhSliHZEo1TmrSiXedS5JWbpDl98i7lVTY4MmZjIrPnXFNcZjZmYLLpbCFIHyuc45/k438xqxsMZzFk52enq9un5NAM2d1XWqUZlbY/+yOd3mERKSDgJe0fnKiTnfBsdJ1AGZvAIWvkLg0JCqCZGknUdXYy5RPJ0pdUXCeakxvYFJudl+GcMe0cxp5seeLZCeNSACNRsV9nuVaG8WPirSMhrGyyLgAC2cAAEYAEdFnSf/gwP+AXv9Oa1xoRTM6DDluLP9mY/+slP8AKVFFbeV/qP91l/+EPP+2sv80KmXAUVKYwqAmPtgZbqhoYtPdqdZHbwkHAAAdAElEQVR4nO1diUNTV7o/2RNZAiQhRJZEICYxMSySQMhliQFigAARTHABpLaylc4bhioakSJWc6lKSZdn27hOR95Y00yZRa3T8fleO07nVXjzKq8yzExf+5e8c+5NWKNeKUiY5qeHe+695y7nl7N85zvf+S4A80ADEcyiKIPcLiCFvrGJ6uUJK/w+YQC6szGajNEALTMTyGEAmZm03dmcOLRPz8xUAXQMpZBn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" alt="">
+      <iframe width="400" height="200" src="https://www.youtube.com/embed/ZN6CRwlBzZY?si=R1vIn7Se6ZL4jM78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <b><h3>¿Cuándo es útil utilizar un bucle do-while en lugar de un bucle while?
+      </h3>
+        <select name="bucledowhile" id="bucledowhile">
+        <option value="opcion1">  Cuando se quiere garantizar que el bloque de código se ejecute un número específico de veces </option>
+        <option value="opcion2"> En situaciones donde es importante ejecutar el bloque de código al menos una vez, independientemente de la condición </option>
+        <option value="opcion3"> Si se conocen previamente las condiciones de salida del bucle</option>
+      </select>
+      <button onclick="BUcleDowhile()">Evaluar</button>
+      <p id="dowhile"></p>
+
+    </ol>
+    </section>
+  </div>
+  <section>
+    <div class="principiosPoo">
+    <h2> Los principios de la programación orientada a objetos (POO)</h2>
+  <h3><li>Encapsulamiento</li></h3>
+  <p>Este principio es fundamental en la programación orientada a objetos. Consiste en ocultar los detalles de implementación de un objeto y exponer solo la interfaz necesaria para interactuar con él.</p>
+   <h3>Ejemplo</h3>
+   <img src="encapsulamiento.jpeg" alt="">
+   <iframe width="400" height="300" src="https://www.youtube.com/embed/Any9LXznQGo?si=8BbYPPWAc_2DI44I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="ejemplo">
+   <p >En este ejemplo, los atributos nombre y edad de la clase Persona son privados, por lo que solo se pueden acceder a ellos a través de métodos (getters y setters), lo que encapsula esos datos y controla su acceso</p>
+  </div>
+   <b><h3>¿Cuál es el propósito principal del encapsulamiento en la programación orientada a objetos?</h3>
+    <select name="ENCAPSULAMIENTO" id="ENCAPSULAMIENTO">
+      <option value="opcion1">Limitar el acceso a los objetos y sus métodos</option>
+      <option value="opcion2">Ocultar los detalles de implementación de un objeto y proporcionar solo una interfaz</option>
+      <option value="opcion3">Limitar el acceso a los objetos y sus métodos</option>
+    </select>
+    <button onclick="encapsulamiento()">Evaluar</button>
+    <p id="encapsulamientoResultado"></p>
+   <h3><li>Abstracción</li></h3>
+   <p>Se refiere a la capacidad de enfocarse en los aspectos esenciales de un objeto mientras se ocultan los detalles innecesarios.</p>
+    <h3>Ejemplo</h3>
+    <img src="abtraccion.jpeg" alt="">
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/Wx_N2MR8bgM?si=TioJvvXa9y_-7gzn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="ejemplo">
+      <p >En este ejemplo, Vehiculo es una clase abstracta que contiene un método conducir(). Las clases Coche y Moto heredan de Vehiculo y proporcionan su propia implementación del método conducir(), mostrando la abstracción de diferentes tipos de vehículos</p>
+     </div>
+ 
+     <b><h3>¿Cómo contribuye la abstracción a la modularidad y la claridad del código?</h3>
+      <select name="ABSTRACCION" id="ABSTRACCION">
+        <option value="opcion1"> Añadiendo más detalles y complejidad a la representación de objetos</option>
+        <option value="opcion2">  Haciendo que los objetos sean más difíciles de entender al ocultar detalles.</option>
+        <option value="opcion3"> Reduciendo la complejidad al mostrar solo la información relevante para la interacción con los objetos, lo que facilita el mantenimiento y la comprensión del código </option>
+      </select>
+      <button onclick="abstraccion()">Evaluar</button>
+      <p id="abstraccionResultado"></p>
+    <h3><li>Herencia</li></h3>
+<p>Es un principio que permite a una clase heredar propiedades y comportamientos de otra clase. En Java, se logra mediante la palabra clave extends. La clase que hereda se conoce como subclase o clase hija, y la clase de la que se hereda se conoce como superclase o clase padre.</p>
+<h3>Ejemplo</h3>
+ <img src="herencia.jpeg" alt="">
+ <iframe width="400" height="300" src="https://www.youtube.com/embed/lCrxnrYDMd8?si=qK3geDQF-nkcuYXZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <div class="ejemplo">
+  <p>En este caso, Perro y Gato son clases que heredan de Animal y sobrescriben el método hacerSonido() para especificar el sonido que hacen, mostrando la herencia de comportamientos comunes.</p> 
+</div>
+
+<b><h3> ¿Cuál es la palabra clave utilizada en Java para lograr la herencia entre clases? </h3>
+  <select name="HERENCIA" id="HERENCIA">
+    <option value="opcion1">extendt </option>
+    <option value="opcion2"> extends</option>
+    <option value="opcion3">  extend</option>
+  </select>
+  <button onclick="herencia()">Evaluar</button>
+  <p id="herenciaResultado"></p>
+
+
+
+ <h3><li>Polimorfismo</li></h3>
+ <p>Se relaciona con la capacidad de un objeto para presentar diferentes formas o comportamientos. Puede manifestarse a través de la sobrecarga y la sobrescritura de métodos.</p>
+<h3>Ejemplo</h3>
+<img src="polimorfismo.jpeg" alt="">
+<iframe width="400" height="300" src="https://www.youtube.com/embed/BSw1MLEc4PQ?si=-gAgpu4HXkVE0tDv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="ejemplo">
+ <p>Aquí, miPerro y miGato son objetos de tipo Animal, pero en tiempo de ejecución, debido al polimorfismo, llaman al método hacerSonido() según la implementación en sus respectivas clases (Perro y Gato).</p>
+</div>
+<b><h3>¿Cómo se manifiesta el polimorfismo en la programación orientada a objetos?</h3>
+  <select name="POLIMORFISMO" id="POLIMORFISMO">
+    <option value="opcion1"> A través de la sobrecarga y la sobrescritura de métodos.</option>
+    <option value="opcion2"> Únicamente mediante la herencia entre clases. </option>
+    <option value="opcion3"> A través de la ocultación de los métodos en una clase</option>
+  </select>
+  <button onclick="polimorfismo()">Evaluar</button>
+  <p id="polimorfismoResultado"></p>
+
+</section>
+</div>
+<script src="Java.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

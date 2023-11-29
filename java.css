@@ -1,0 +1,231 @@
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    justify-content:center;
+    background-color: #4cb2c1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+h1, h3 {
+    color: rgb(0, 164, 179);
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    color: rgb(0, 75, 179);
+    margin-bottom: 25px;
+  }
+  
+  /* Estilos para las secciones */
+  section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  ol {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  ol li {
+    margin-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  a {
+    color: #009688;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  iframe{
+  border-radius: 10px;
+  margin-left: 30px;
+  border-color: solid black;
+}
+img {
+  width: 320px;
+  height: 200px;
+ border-radius: 20px;
+  margin-left: 30px;
+ border: 2px solid black; 
+}
+.condicional img{
+  width: 400px;
+  height: 200px;
+
+}
+.bucles img{
+  width: 400px;
+  height: 200px;
+}
+
+.principiosPoo img{
+  width: 400px;
+  height: 300px;
+
+}
+.ejemplo {
+
+  font: oblique bold 100% cursive;
+  
+}
+
+
+select {
+  width: 100%;
+  padding: 12px; 
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #333;
+  font-size: 18px; 
+  outline: none; 
+  transition: border-color 0.3s ease-in-out; 
+}
+
+select:focus {
+  border-color: rgb(0, 255, 242); 
+}
+
+/* Estilos para el botón */
+button {
+  padding: 12px 24px; 
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px; 
+  font-size: 18px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out; 
+}
+
+button:hover {
+  background-color: #5b6876; 
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#Respuesta{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+#Respuestas{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#comprovar{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#finish{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#evaluarEstructura{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#Estructuraswitch{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#BUcleFor{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#BUclewhile{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#BUcleDowhile{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#encapsulamiento{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#abstraccion{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#herencia{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+#polimorfismo{
+  margin-top: 20px;
+  font-size: 20px; 
+  font-weight: bold;
+  color: rgb(0, 117, 115); 
+}
+
+
